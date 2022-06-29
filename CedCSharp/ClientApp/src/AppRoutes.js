@@ -1,6 +1,7 @@
 import { Counter } from "./components/Counter";
 import { FetchData } from "./components/FetchData";
 import { Home } from "./components/Home";
+import { LoadImgFromServer } from "./components/LoadImgFromServer";
 
 const AppRoutes = [
   {
@@ -9,7 +10,11 @@ const AppRoutes = [
   },
   {
     path: '/counter',
-    element: <Counter />
+      element: <Counter />
+  },
+  {
+      path: '/load-img-from-server',
+      element: <LoadImgFromServer/>
   },
   {
     path: '/fetch-data',
